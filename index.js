@@ -1,19 +1,19 @@
-var express = require('express');  
-var bodyParser = require('body-parser');  
-var request = require('request');  
+var express = require('express');
+var bodyParser = require('body-parser');
+var request = require('request');
 var app = express();
 
-app.use(bodyParser.urlencoded({extended: false}));  
-app.use(bodyParser.json());  
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 app.listen((process.env.PORT || 3000));
 
 // Server frontpage
-app.get('/', function (req, res) {  
+app.get('/', function (req, res) {
     res.send('This is SherlockBot Server');
 });
 
 // Facebook Webhook
-app.get('/webhook', function (req, res) {  
+app.get('/webhook', function (req, res) {
     if (req.query['hub.verify_token'] === 'testbot_verify_token') {
         res.send(req.query['hub.challenge']);
     } else {
@@ -22,7 +22,7 @@ app.get('/webhook', function (req, res) {
 });
 
 // handler receiving messages
-app.post('/webhook', function (req, res) {  
+app.post('/webhook', function (req, res) {
     var events = req.body.entry[0].messaging;
     for (i = 0; i < events.length; i++) {
         var event = events[i];
@@ -34,7 +34,7 @@ app.post('/webhook', function (req, res) {
 });
 
 // generic function sending messages
-function sendMessage(recipientId, message) {  
+function sendMessage(recipientId, message) {
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token: process.env.PAGE_ACCESS_TOKEN},
@@ -50,7 +50,7 @@ function sendMessage(recipientId, message) {
             console.log('Error: ', response.body.error);
         }
     });
-};
+}
 
 function receivedPostback(event) {
   var senderID = event.sender.id;
@@ -61,7 +61,7 @@ function receivedPostback(event) {
   // button for Structured Messages. 
   var payload = event.postback.payload;
 
-  console.log("Received postback for user %d and page %d with payload '%s' " + 
+  console.log("Received postback for user %d and page %d with payload '%s' " +
     "at %d", senderID, recipientID, payload, timeOfPostback);
 
 
@@ -77,7 +77,8 @@ function receivedPostback(event) {
        default:
          sendTextMessage(senderID, "Postback called");
        }
-};
+    }
+}
 
 function startedConv(recipientId){
 var name;
@@ -93,7 +94,7 @@ request({
               console.log('Error: ', response.body.error);
           }else{
               name = JSON.parse(body);
-              sendTextMessage(recipientId, "Hello "+ name.first_name+", how can i help you ? ")
+              sendTextMessage(recipientId, "Hello "+ name.first_name+", how can i help you ? ");
           }
       });
-};   
+}
