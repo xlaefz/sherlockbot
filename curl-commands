@@ -1,11 +1,24 @@
 curl -X POST -H "Content-Type: application/json" -d '{
   "setting_type":"greeting",
   "greeting":{
-    "text":"Hello sir! Ask me questions about your friends!"
+    "text":"Greetings! I am here to help you find new movies, music, books, and shows that match your taste!"
   }
 }' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAazp7yTD5ABAImoZB5Oni2AdF0pU3UdEf2Ax0x33H5GS7ge7EECV2l7SAniZBNrY24Anw1ACoWQfcbJXZC0MCqbtdO3Li8DVEgTYRtunp1uiLNOn1kecYowS4WXeFUJuJidK6m2U9QDMd1tkcsw0KosjzClF5oCSH5G4D8SwZDZD"    
 
 
 
+curl -X POST -H "Content-Type: application/json" -d '{
+  "setting_type":"call_to_actions",
+  "thread_state":"new_thread",
+  "call_to_actions":[
+    {
+      "payload": "action?getstarted" 
+    }
+  ]
+}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAazp7yTD5ABAImoZB5Oni2AdF0pU3UdEf2Ax0x33H5GS7ge7EECV2l7SAniZBNrY24Anw1ACoWQfcbJXZC0MCqbtdO3Li8DVEgTYRtunp1uiLNOn1kecYowS4WXeFUJuJidK6m2U9QDMd1tkcsw0KosjzClF5oCSH5G4D8SwZDZD"  
+
+"Hello! I'm TasteBoi. I can give you recommendations for movies, shows, books, and music! Just tell me what movies/shows/books/music you are into right now and I'll do my best!"
+
 
 curl -X GET "https://graph.facebook.com/v2.6/<sender-id>?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=EAAazp7yTD5ABAImoZB5Oni2AdF0pU3UdEf2Ax0x33H5GS7ge7EECV2l7SAniZBNrY24Anw1ACoWQfcbJXZC0MCqbtdO3Li8DVEgTYRtunp1uiLNOn1kecYowS4WXeFUJuJidK6m2U9QDMd1tkcsw0KosjzClF5oCSH5G4D8SwZDZD"  
+
