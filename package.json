@@ -1,5 +1,5 @@
 {
-  "name": "Tasty Boy",
+  "name": "movierecommender",
   "version": "1.0.0",
   "description": "Get recommendations for movies based on your preferences.",
   "main": "app.js",
