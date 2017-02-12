@@ -1,6 +1,6 @@
 {
     "appSecret": "86a955e49cafe246c0cc6bf1072a55d0",
-    "pageAccessToken": "EAAazp7yTD5ABAImoZB5Oni2AdF0pU3UdEf2Ax0x33H5GS7ge7EECV2l7SAniZBNrY24Anw1ACoWQfcbJXZC0MCqbtdO3Li8DVEgTYRtunp1uiLNOn1kecYowS4WXeFUJuJidK6m2U9QDMd1tkcsw0KosjzClF5oCSH5G4D8SwZDZD",
+    "pageAccessToken": "EAAazp7yTD5ABAEOJv3rlIB3uFHRE9xslZA9eLwp0Bj5ipmiOwZBVriKKWa3FTSxaZBl6Lg1On7X6IqA60aREghAYXO2kFlpnKEsEs9JFWQlBL9TH3mG6xiMbuOmj5bxmeGWU4IWsZA0Gkb5rZB2DT4HCN8QuxcKVwP0S29xFCuAZDZD",
     "validationToken": "testbot_verify_token",
-    "serverURL": "https://murmuring-wave-61802.herokuapp.com/"
+    "serverURL": "https://shielded-mountain-14237.herokuapp.com/"
 }
