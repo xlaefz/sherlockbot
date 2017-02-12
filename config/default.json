@@ -1,6 +1,6 @@
 {
-    "appSecret": "86a955e49cafe246c0cc6bf1072a55d0",
-    "pageAccessToken": "EAAazp7yTD5ABAImoZB5Oni2AdF0pU3UdEf2Ax0x33H5GS7ge7EECV2l7SAniZBNrY24Anw1ACoWQfcbJXZC0MCqbtdO3Li8DVEgTYRtunp1uiLNOn1kecYowS4WXeFUJuJidK6m2U9QDMd1tkcsw0KosjzClF5oCSH5G4D8SwZDZD",
+    "appSecret": "680b14077ec03b7d71d903b86a7a2fb8",
+    "pageAccessToken": "EAAaNToafqvwBAMdtG99ZC4i9UhrPVgbAsrEyQ8Xymne8bK4ZA26GKZCHTqYJr2Vmjyhr45PuQDgwgJURBr8o4GMa0Lp8j8OYzEk1nL0feOJyQyOtZCh6xlYvPzlDA5iifsaqXk1nZBRRTbZAxWphw2gleguCXD94eN3yBloyFD4AZDZD",
     "validationToken": "testbot_verify_token",
-    "serverURL": "https://murmuring-wave-61802.herokuapp.com/"
+    "serverURL": "https://limitless-shore-67606.herokuapp.com/"
 }
