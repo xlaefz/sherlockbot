@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
     "appSecret": "680b14077ec03b7d71d903b86a7a2fb8",
     "pageAccessToken": "EAAaNToafqvwBAMdtG99ZC4i9UhrPVgbAsrEyQ8Xymne8bK4ZA26GKZCHTqYJr2Vmjyhr45PuQDgwgJURBr8o4GMa0Lp8j8OYzEk1nL0feOJyQyOtZCh6xlYvPzlDA5iifsaqXk1nZBRRTbZAxWphw2gleguCXD94eN3yBloyFD4AZDZD",
     "validationToken": "testbot_verify_token",
     "serverURL": "https://limitless-shore-67606.herokuapp.com/"
+=======
+    "appSecret": "86a955e49cafe246c0cc6bf1072a55d0",
+    "pageAccessToken": "EAAazp7yTD5ABAEOJv3rlIB3uFHRE9xslZA9eLwp0Bj5ipmiOwZBVriKKWa3FTSxaZBl6Lg1On7X6IqA60aREghAYXO2kFlpnKEsEs9JFWQlBL9TH3mG6xiMbuOmj5bxmeGWU4IWsZA0Gkb5rZB2DT4HCN8QuxcKVwP0S29xFCuAZDZD",
+    "validationToken": "testbot_verify_token",
+    "serverURL": "https://arcane-woodland-41615.herokuapp.com/"
+>>>>>>> 8b685c12fff285a7a833ea66c0324fb4d56c054a
 }
