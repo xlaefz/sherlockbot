@@ -49,7 +49,6 @@ const PAGE_ACCESS_TOKEN = (process.env.MESSENGER_PAGE_ACCESS_TOKEN) ?
 // assets located at this address. 
 const SERVER_URL = (process.env.SERVER_URL) ?
   (process.env.SERVER_URL) :
-  console.log(SERVER_URL);
   config.get('serverURL');
 
 if (!(APP_SECRET && VALIDATION_TOKEN && PAGE_ACCESS_TOKEN && SERVER_URL)) {
