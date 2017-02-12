@@ -367,7 +367,7 @@ function receivedPostback(event) {
 
   // When a postback is called, we'll send a message back to the sender to 
   // let them know it was successful
-  sendTextMessage(senderID, "Greetings! I am here to help you find new movies, music, books, and shows that match your taste!");
+  sendTextMessage(senderID, "Greetings! Tell me a movie you like and I'll recommend some more like it. I've been told I have excellent taste!");
 }
 
 /*
